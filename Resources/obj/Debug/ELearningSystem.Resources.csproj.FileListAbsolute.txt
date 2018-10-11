@@ -1,0 +1,21 @@
+C:\Users\danch\documents\visual studio 2013\Projects\ELearningSystem\Resources\bin\Debug\Resources.dll
+C:\Users\danch\documents\visual studio 2013\Projects\ELearningSystem\Resources\bin\Debug\Resources.pdb
+C:\Users\danch\documents\visual studio 2013\Projects\ELearningSystem\Resources\bin\Debug\en\Resources.resources.dll
+C:\Users\danch\documents\visual studio 2013\Projects\ELearningSystem\Resources\obj\Debug\Resources.Resource.resources
+C:\Users\danch\documents\visual studio 2013\Projects\ELearningSystem\Resources\obj\Debug\Resources.Resource.en.resources
+C:\Users\danch\documents\visual studio 2013\Projects\ELearningSystem\Resources\obj\Debug\ELearningSystem.Resources.csproj.GenerateResource.Cache
+C:\Users\danch\documents\visual studio 2013\Projects\ELearningSystem\Resources\obj\Debug\en\Resources.resources.dll
+C:\Users\danch\documents\visual studio 2013\Projects\ELearningSystem\Resources\obj\Debug\Resources.dll
+C:\Users\danch\documents\visual studio 2013\Projects\ELearningSystem\Resources\obj\Debug\Resources.pdb
+C:\Users\danch\documents\visual studio 2013\Projects\ELearningSystem\Resources\obj\Debug\ELearningSystem.Resources.csprojResolveAssemblyReference.cache
+C:\Users\vivian\Downloads\ELearningSystem\Resources\bin\Debug\Resources.dll
+C:\Users\vivian\Downloads\ELearningSystem\Resources\bin\Debug\Resources.pdb
+C:\Users\vivian\Downloads\ELearningSystem\Resources\bin\Debug\en\Resources.resources.dll
+C:\Users\vivian\Downloads\ELearningSystem\Resources\obj\Debug\ELearningSystem.Resources.csprojResolveAssemblyReference.cache
+C:\Users\vivian\Downloads\ELearningSystem\Resources\obj\Debug\Resources.Resource.resources
+C:\Users\vivian\Downloads\ELearningSystem\Resources\obj\Debug\Resources.Resource.en.resources
+C:\Users\vivian\Downloads\ELearningSystem\Resources\obj\Debug\ELearningSystem.Resources.csproj.GenerateResource.cache
+C:\Users\vivian\Downloads\ELearningSystem\Resources\obj\Debug\ELearningSystem.Resources.csproj.CoreCompileInputs.cache
+C:\Users\vivian\Downloads\ELearningSystem\Resources\obj\Debug\en\Resources.resources.dll
+C:\Users\vivian\Downloads\ELearningSystem\Resources\obj\Debug\Resources.dll
+C:\Users\vivian\Downloads\ELearningSystem\Resources\obj\Debug\Resources.pdb

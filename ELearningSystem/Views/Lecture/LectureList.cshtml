@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "LectureList";
+}
+@model IEnumerable<ELearningSystem.Model.Course>
+
+<h2>@Resources.Resource.strLectures</h2>
+@if (Model != null)
+{
+    using (Html.BeginForm())
+    {
+        <div>
+            <span>@ViewBag.Message</span>
+            <ul>
+                @if (Model.Count() > 1)
+                {
+                    foreach (var item in Model)
+                    {
+                        <li style="font-size: large;">
+                            @Resources.Resource.strCourse @item.Name
+                        </li>
+                        <li>@Resources.Resource.strLectures :</li>
+                        for (var i = 0; i < item.LectureList.Count(); i++)
+                        {
+                            @Html.Partial("_Lecture", new { index = i, lecture = item.LectureList[i] })
+                        }
+                        if (User != null && User.Identity.IsAuthenticated && User.IsAdmin)
+                        {
+                            <a href="@Url.Action("AddLecture", "Lecture", new { courseId = item.Id})">@Resources.Resource.strAddLecture</a>
+                        }
+                    }
+                }
+            </ul>
+        </div>
+    }
+}

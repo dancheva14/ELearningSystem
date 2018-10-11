@@ -1,0 +1,12 @@
+C:\Users\danch\documents\visual studio 2013\Projects\ELearningSystem\ELearningSystem.Model\bin\Debug\ELearningSystem.Model.dll
+C:\Users\danch\documents\visual studio 2013\Projects\ELearningSystem\ELearningSystem.Model\bin\Debug\ELearningSystem.Model.pdb
+C:\Users\danch\documents\visual studio 2013\Projects\ELearningSystem\ELearningSystem.Model\bin\Debug\Resources.dll
+C:\Users\danch\documents\visual studio 2013\Projects\ELearningSystem\ELearningSystem.Model\bin\Debug\Resources.pdb
+C:\Users\danch\documents\visual studio 2013\Projects\ELearningSystem\ELearningSystem.Model\bin\Debug\en\Resources.resources.dll
+C:\Users\danch\documents\visual studio 2013\Projects\ELearningSystem\ELearningSystem.Model\obj\Debug\ELearningSystem.Model.csprojResolveAssemblyReference.cache
+C:\Users\danch\documents\visual studio 2013\Projects\ELearningSystem\ELearningSystem.Model\obj\Debug\ELearningSystem.Model.dll
+C:\Users\danch\documents\visual studio 2013\Projects\ELearningSystem\ELearningSystem.Model\obj\Debug\ELearningSystem.Model.pdb
+C:\Users\vivian\Downloads\ELearningSystem\ELearningSystem.Model\obj\Debug\ELearningSystem.Model.csprojResolveAssemblyReference.cache
+C:\Users\vivian\Downloads\ELearningSystem\ELearningSystem.Model\obj\Debug\ELearningSystem.Model.csproj.CoreCompileInputs.cache
+C:\Users\vivian\Downloads\ELearningSystem\ELearningSystem.Model\obj\Debug\ELearningSystem.Model.dll
+C:\Users\vivian\Downloads\ELearningSystem\ELearningSystem.Model\obj\Debug\ELearningSystem.Model.pdb

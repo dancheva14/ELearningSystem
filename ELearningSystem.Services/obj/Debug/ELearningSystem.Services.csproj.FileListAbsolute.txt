@@ -1,0 +1,11 @@
+C:\Users\danch\documents\visual studio 2013\Projects\ELearningSystem\ELearningSystem.Services\bin\Debug\ELearningSystem.Services.dll
+C:\Users\danch\documents\visual studio 2013\Projects\ELearningSystem\ELearningSystem.Services\bin\Debug\ELearningSystem.Services.pdb
+C:\Users\danch\documents\visual studio 2013\Projects\ELearningSystem\ELearningSystem.Services\bin\Debug\ELearningSystem.Model.dll
+C:\Users\danch\documents\visual studio 2013\Projects\ELearningSystem\ELearningSystem.Services\bin\Debug\ELearningSystem.Repository.dll
+C:\Users\danch\documents\visual studio 2013\Projects\ELearningSystem\ELearningSystem.Services\bin\Debug\Dapper.dll
+C:\Users\danch\documents\visual studio 2013\Projects\ELearningSystem\ELearningSystem.Services\bin\Debug\ELearningSystem.Model.pdb
+C:\Users\danch\documents\visual studio 2013\Projects\ELearningSystem\ELearningSystem.Services\bin\Debug\ELearningSystem.Repository.pdb
+C:\Users\danch\documents\visual studio 2013\Projects\ELearningSystem\ELearningSystem.Services\bin\Debug\Dapper.xml
+C:\Users\danch\documents\visual studio 2013\Projects\ELearningSystem\ELearningSystem.Services\obj\Debug\ELearningSystem.Services.csprojResolveAssemblyReference.cache
+C:\Users\danch\documents\visual studio 2013\Projects\ELearningSystem\ELearningSystem.Services\obj\Debug\ELearningSystem.Services.dll
+C:\Users\danch\documents\visual studio 2013\Projects\ELearningSystem\ELearningSystem.Services\obj\Debug\ELearningSystem.Services.pdb

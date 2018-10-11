@@ -1,0 +1,16 @@
+﻿@model IEnumerable<ELearningSystem.Model.Course>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>@Resources.Resource.strTests</h2>
+
+<h4>@Resources.Resource.strChooseCourseFromList</h4>
+<div>
+    <ul>
+        @foreach (var item in Model)
+        {
+            <li>@Html.ActionLink(item.Name, "Index", "Tests", new { item.Id }, null)</li>
+        }
+    </ul>
+</div>

@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#menu-toggle" id="menu-toggle" aria-hidden="true">
+                    <span class="glyphicon glyphicon-resize-horizontal custom" aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink(@Resources.Resource.strCourses, "Index", "Courses")</li>
+                    <li>@Html.ActionLink(@Resources.Resource.strLectures, "LectureList", "Lecture")</li>
+                    <li>@Html.ActionLink(@Resources.Resource.strTests, "Index", "TestCourse")</li>
+                    <li>@Html.ActionLink(@Resources.Resource.strResults, "Index", "StudentResult")</li>
+                    <li class="dropdown">
+                        @if (User != null && User.Identity.IsAuthenticated && User.IsAdmin)
+                        {
+                            <a class="dropdown-toggle" role="button" aria-expanded="false" href="#" data-toggle="dropdown">@Resources.Resource.strAdd <span class="caret"></span></a>
+
+                            <ul class="dropdown-menu" role="menu">
+                                <li>@Html.ActionLink(@Resources.Resource.strAddCourse, "AddCourse", "Courses")</li>
+                                <li>@Html.ActionLink(@Resources.Resource.strAddLecture, "GetCoursesDropdown", "Lecture")</li>
+                                @*<li>@Html.ActionLink(@Resources.Resource.strAddCourse, "AddRole", "UserRegistration")</li>*@
+                            </ul>
+                        }
+                        @if (User != null && User.Identity.IsAuthenticated)
+                        {
+                        <li>@Html.ActionLink(@Resources.Resource.strExit, "Logout", "UserRegistration")</li>
+                        }
+                        else
+                        {
+                            <li>
+                                @Html.ActionLink(@Resources.Resource.strLogin, "Login", "UserRegistration"
+                                    )
+                        </li>
+                            <li>@Html.ActionLink(@Resources.Resource.strRegistration, "Registration", "UserRegistration")</li>
+                        }
+                        <li>
+                            <a href="@Url.Action("ChangeLanguage", "Language", new { SelectedLanguage = "En" })">
+                                <img src="~/Images/eng.png" style="height:25px" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("ChangeLanguage", "Language", new { SelectedLanguage = "Bg" })">
+                                <img src="~/Images/bg.png" style="height:25px" />
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">@Resources.Resource.strELearningSystem</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container body-content">
+            <div id="wrapper" class="toggled">
+                <div id="sidebar-wrapper">
+                    <ul class="sidebar-nav">
+                        @if (User != null && User.Identity.IsAuthenticated)
+                        {
+                            <li>@Html.ActionLink(@Resources.Resource.strHello + User.FullName, "Index", "Home")</li>
+                        }
+                        <li>@Html.ActionLink(@Resources.Resource.strCourses, "Index", "Courses")</li>
+                        <li>@Html.ActionLink(@Resources.Resource.strTests, "Index", "TestCourse")</li>
+                        <li>@Html.ActionLink(@Resources.Resource.strResults, "Index", "StudentResult")</li>
+                        @*<li>@Html.ActionLink(@Resources.Resource.strAddCourse, "AddCourse", "Courses")</li>*@
+
+                    </ul>
+                </div>
+
+                <div id="page-content-wrapper">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                @RenderBody()
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <footer>
+                    <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+                </footer>
+            </div>
+        </div>
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @Scripts.Render("~/bundles/custom")
+        @RenderSection("scripts", required: false)
+
+        <script>
+            $("#menu-toggle").click(function (e) {
+                e.preventDefault();
+                $("#wrapper").toggleClass("toggled");
+            });
+        </script>
+    </body>
+</html>

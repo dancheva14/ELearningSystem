@@ -1,0 +1,28 @@
+﻿@model IEnumerable<ELearningSystem.Model.Course>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@Resources.Resource.strCourses</h2>
+<div class="courses-list">
+    <ul>
+        @foreach (var item in Model)
+        {
+            <li>
+                @Html.Hidden("courseId", item.Id)
+                @Html.ActionLink(item.Name, "Index", "Lecture", new { item.Id }, null)
+
+                <span class="glyphicon glyphicon-info-sign custom course-info-js" aria-hidden="true"></span>
+            </li>
+        }
+    </ul>
+</div>
+@*<div>
+    <a href="@Url.Action("AddCourse", "Courses")">@Resources.Resource.strAddCourse</a>
+</div>*@
+<div id="course-info-container">
+
+</div>
+

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="55726271-25d4-4eec-b9f8-6e7c7385ac0c" name="UMLUseCaseDiagram1" linkedPackageId="2dd4d4b6-f3e9-49c2-b8c8-5425896541bc" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="e0447d00-1d7b-4ffa-95c3-3a0ece30c894">
+      <profileInstance Id="626de65b-f7f8-4f46-a669-d4ac135503ca" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="81f490f3-a593-4c9a-9cb5-d2a49af62a82">
+      <profileInstance Id="9d3cb040-083e-4c75-adc7-f84f3909c8e9" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="49c70675-f9b0-44b8-b457-6d48caf76ad8" name="Actor1" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f82ec43c-bed0-4a7c-b0fd-bc54b5552365" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e7a4b188-d728-4dff-83a4-b64420642d57" name="hfjf" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1a6acf24-40d6-462c-8d50-7f6437f45004" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="e291c026-4daa-44e0-a8a7-881d067f9e8d" name="Subsystem1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4b960076-6254-4522-8601-73da33c3726d" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <artifact Id="8b387bb1-553b-4ce7-99bf-c18e00b619b5" name="Artifact1" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f79ab421-fc42-41ae-a5db-1d2227153fb4" />
+      </artifact>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="2dd4d4b6-f3e9-49c2-b8c8-5425896541bc" name="ModelingProject1">
+    <elementDefinition Id="bea50031-299e-450a-9377-89b7c1d0da7f" />
+  </package>
+</useCaseModelRoot>

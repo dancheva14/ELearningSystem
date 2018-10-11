@@ -1,0 +1,11 @@
+﻿@model List<ELearningSystem.Model.Course>
+@{
+    ViewBag.Title = "CoursesDropdown";
+    var coursesSelectList = new SelectList(Model.Select(m => new SelectListItem { Text = m.Name, Value = m.Id.ToString() }), "Value", "Text");
+}
+
+Изберете курс, към който искате да добавите лекция:
+@Html.DropDownList("CoursesDropdown",coursesSelectList, "Изберете")
+<div id="lecture-form-container">
+
+</div>

@@ -1,0 +1,54 @@
+﻿@model ELearningSystem.Model.Student
+@{
+    ViewBag.Title = "Registration";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@Resources.Resource.strRegistration</h2>
+@using (Html.BeginForm())
+{
+    <div>
+        <fieldset>
+            <div class="editor-label">@Html.LabelFor(s => s.UserName)</div>
+            <div class="editor-field">
+                @Html.TextBoxFor(s => s.UserName)
+                @Html.ValidationMessageFor(s => s.UserName)
+            </div>
+            <div class="editor-label">@Html.LabelFor(s => s.Password)</div>
+            <div class="editor-field">
+                @Html.PasswordFor(s => s.Password)
+                @Html.ValidationMessageFor(s => s.Password)
+            </div>
+            <div class="editor-label">@Html.LabelFor(s => s.ConfirmPassword)</div>
+            <div class="editor-field">
+                @Html.PasswordFor(s => s.ConfirmPassword)
+                @Html.ValidationMessageFor(s => s.ConfirmPassword)
+            </div>
+            <div class="editor-label">@Html.LabelFor(s => s.FullName)</div>
+            <div class="editor-field">
+                @Html.TextBoxFor(s => s.FullName)
+                @Html.ValidationMessageFor(s => s.FullName)
+            </div>
+            <div class="editor-label">@Html.LabelFor(s => s.Email)</div>
+            <div class="editor-field">
+                @Html.TextBoxFor(s => s.Email)
+                @Html.ValidationMessageFor(s => s.Email)
+            </div>
+            <div>
+                <input class="col-lg-3" type="submit" value=@Resources.Resource.strRegister />
+            </div>
+            <div style="float:right; height: 120px; width:400px; margin:5px; border-style:outset">
+                <p></p>
+                <div>
+                    За успешно регистриране въведете потребителско име,
+                    парола, която трябва да е минимум 8 символа,
+                    валиден имейл, за контакт
+                    и свойте данни.
+                </div>
+            </div>
+        </fieldset>
+
+       
+    </div>
+  
+}

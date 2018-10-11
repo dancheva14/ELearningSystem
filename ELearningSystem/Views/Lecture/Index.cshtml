@@ -1,0 +1,42 @@
+﻿@model IEnumerable<ELearningSystem.Model.Course>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*<h2>@Resources.Resource.strLectures</h2>*@
+<h2>@Resources.Resource.strListOfLectures</h2>
+@if (Model != null)
+{
+    using (Html.BeginForm())
+    {
+        @Html.HiddenFor(m => m.First().Id)
+        <div>
+            <span>@ViewBag.Message</span>
+            <ul>
+                @if (Model.Count() == 1)
+                {
+                    foreach (var item in Model)
+                    {
+                        for (int i = 0; i < item.LectureList.Count(); i++)
+                        {
+                            <li>@Html.ActionLink(item.LectureList[i].Title, "Index", "Sublecture", new { item.LectureList[i].Id }, null)</li>
+                        }
+                        
+                        <a href="@Url.Action("AddLecture", "Lecture", new { courseId = Model.First().Id})">@Resources.Resource.strAddLecture</a>
+                    }
+
+                }
+            </ul>
+        </div>
+    if (User != null && User.Identity.IsAuthenticated && User.IsAdmin)
+    { 
+        <input class='button edit_recipient' type='button' value=@Resources.Resource.strEdit
+               onclick="location.href='@Url.Action("Edit", "Courses", new { Model.First().Id },null )'" />
+
+        <input class='button edit_recipient' type='button' value=@Resources.Resource.strDelete
+               onclick="location.href='@Url.Action("Delete", "Courses", new { Model.First().Id },null )'" />
+    }
+    }
+}

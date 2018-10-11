@@ -1,0 +1,35 @@
+﻿@model IEnumerable<ELearningSystem.Model.TestResult>
+@{
+    ViewBag.Title = "Index";
+}
+@if (Model != null)
+{
+
+    <li class="dropdown" style="height:33px;">
+        <a class="dropdown-toggle" role="button" aria-expanded="false" href="#" data-toggle="dropdown">@Resources.Resource.strSortBy <span class="glyphicon glyphicon-search"></span></a>
+        <ul class="dropdown-menu" role="menu">
+            <li>@Html.ActionLink(@Resources.Resource.strDate, "IndexDate", "StudentResult")</li>
+            <li>@Html.ActionLink(@Resources.Resource.strName, "IndexName", "StudentResult")</li>
+        </ul>
+    </li>
+
+
+    using (Html.BeginForm())
+    {
+        <p style="height:30px">Ученик: @User.FullName</p>
+        <div>
+            @if (ViewBag.Message != null)
+            {
+                <span>@ViewBag.Message</span>
+            }
+            <ul>
+                @foreach (var item in Model)
+                {
+                    <li><b>Тест: @item.TestName</b></li>
+                    <text>@item.Grade</text>
+                    <text>@item.Date</text>
+                }
+            </ul>
+        </div>
+    }
+}
